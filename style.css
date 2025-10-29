@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: #faf8ff;
+  color: #333;
+  text-align: center;
+}
+
+/* رأس الصفحة */
+header {
+  background: linear-gradient(135deg, #b57edc, #8a47c2);
+  color: white;
+  padding: 25px 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #f8eaff;
+}
+
+/* أزرار الأقسام */
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 10px;
+}
+
+.category-button {
+  background-color: #eae2f8;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #5b2c91;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category-button:hover {
+  background-color: #cdb4f4;
+  transform: scale(1.05);
+}
+
+/* معرض الصور */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+#gallery img {
+  width: 25%;
+  border-radius: 15px;
+  margin: 8px;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+.hint {
+  color: #777;
+  font-size: 15px;
+}
+
+/* تذييل */
+footer {
+  background-color: #f2eaff;
+  padding: 12px;
+  font-size: 14px;
+  color: #5c448c;
+  border-top: 1px solid #ddd;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 20px;
+}
+
+/* حركة لطيفة */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* 💡 تحسين العرض للجوال */
+@media (max-width: 768px) {
+  header h1 { font-size: 20px; }
+  .subtitle { font-size: 14px; }
+
+  .category-button {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #gallery img {
+    width: 80%;
+  }
+}
+
+/*
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.image-container img {
+  width: 150px;    
+  height: auto;     
+  border-radius: 12px;  
+  margin: 8px;     
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); 
+}
+*/
